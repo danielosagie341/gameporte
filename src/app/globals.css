@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+    @font-face {
+        font-family: 'SansBold';
+        src: url('../assets/Fonts/OpenSans-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'SansMedium';
+        src: url('../assets/Fonts/OpenSans-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: 'SansLight';
+        src: url('../assets/Fonts/OpenSans-Light.ttf');
+    }
+
+    @font-face {
+        font-family: 'SansItalic';
+        src: url('../assets/Fonts/OpenSans-LightItalic.ttf');
+    }
+
+    @font-face {
+        font-family: 'SansRegular';
+        src: url('../assets/Fonts/OpenSans-Regular.ttf');
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+p,
+h4,
+h5,
+h6,
+span,
+button,
+input,
+textarea {
+    font-family: 'SansRegular';
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1,
+h2,
+h3 {
+    font-family: 'SansBold';
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+li {
+    list-style: none;
 }

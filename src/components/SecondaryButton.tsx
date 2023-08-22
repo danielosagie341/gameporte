@@ -6,7 +6,7 @@ interface SecondaryButtonProps {
 
 const SecondaryButton: React.FC<SecondaryButtonProps> = (props) => {
   return (
-      <p className='md:border-2 md:inline px-7 text-center py-3 my-2 rounded-[50px] border-lightBlue mx-2'>{ props.title }</p>
+      <p className='md:border-2 md:inline px-5 text-center py-2 my-2 rounded-[50px] border-light-blue text-white mx-2'>{ props.title }</p>
   )
 }
 

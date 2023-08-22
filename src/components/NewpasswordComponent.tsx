@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
-import NavBrand from '@/assets/NavBrand.png';
 import Link from 'next/link';
 import PrimaryButton from './PrimaryButton';
 
@@ -18,7 +17,7 @@ const NewpasswordComponent = () => {
 
   return (
       <form className='flex flex-col w-[450px] items-center text-center md:rounded-[30px] my-20 py-10 px-5 md:px-10 bg-primaryBlue'>
-          <Image className="px-10" src={NavBrand} alt="" />
+          <Image className="px-10" src='./assets/NavBrand.png' alt="" />
 
           <div className='py-5'>
               <h1 className='font-semibold text-xl'>New password</h1>

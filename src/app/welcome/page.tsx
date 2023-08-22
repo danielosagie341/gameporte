@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import GameProfileUpdated from '@/components/GameProfileUpdated';
 import PreferredConsoleTag from '@/components/PreferredConsoleTag';
-import SelectConsole from '@/components/SelectConsole';
-import SelectGame from '@/components/SelectGame';
-import Welcome from '@/components/Welcome';
+import SelectConsole from '@/app/welcome/component/SelectConsole';
 import Home from '../page';
+import Welcome from './component/Welcome';
+import SelectGame from './component/SelectGame';
 
 
 
